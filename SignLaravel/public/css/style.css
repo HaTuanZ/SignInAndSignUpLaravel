@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.alert li {
+  list-style: none;
+  color: red;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 20px auto;
+  color: #afa7af;
+}
+
+a {
+  text-decoration: none;
+  color: #afa7af;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  color: black;
+  font-size: 25px;
+}
+
+.htext {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+.header {
+  background-color: white;
+  border-radius: 2px;
+  padding-bottom: 30px;
+}
+.header form {
+  padding: 0 40px;
+}
+.header form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.header form div input[type=text], .header form div input[type=password] {
+  height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+  border: 1px solid #e7e9ec;
+  border-radius: 5px;
+}
+.header form div input[type=submit] {
+  height: 40px;
+  background-color: #55adc2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+.header form div input[type=submit]:hover {
+  cursor: pointer;
+}
+.header form div label {
+  color: #7b7b80;
+  opacity: 80;
+  font-weight: 800;
+  font-size: 13px;
+}
+.header form .checkbox {
+  flex-direction: row;
+  position: relative;
+  color: #7b7b80;
+  opacity: 80;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 19px;
+}
+.header form .checkbox b {
+  color: black;
+}
+.header form .checkbox input[type=checkbox] {
+  color: #ffffff;
+}
+.header form .checkbox input[type=checkbox]:checked:before {
+  content: "\2713";
+  text-align: center;
+  line-height: 13px;
+  color: #ffffff;
+  background: #2196F3;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+  left: 10px;
+  bottom: -3px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+.footer > div {
+  margin-bottom: 20px;
+}
+.footer .signUp a {
+  color: black;
+  font-weight: 600;
+}

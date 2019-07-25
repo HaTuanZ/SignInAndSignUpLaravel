@@ -1,0 +1,120 @@
+@mixin center {
+    text-align: center;
+}
+@mixin text-label{
+    color: #7b7b80;
+    opacity: 80;
+    font-weight: 800;
+    font-size: 13px;
+}
+.alert{
+    li{
+        list-style: none;
+        color: red;
+    }
+}
+body{
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+  }
+.container {
+    width: 400px;
+    margin: 20px auto;
+    color: #afa7af;
+}
+a{
+    text-decoration: none;
+    color: #afa7af;
+}
+h3 {
+    @include center;
+    padding-top: 20px;
+    color: black;
+    font-size: 25px;
+  }
+.htext{
+    @include center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+.header{
+    background-color: white;
+    border-radius: 2px;
+    padding-bottom: 30px;
+form{
+padding: 0 40px;
+div{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    input[type="text"], input[type="password"]{
+        height: 30px;
+        padding-left: 10px;
+        margin-top: 5px;
+        border: 1px solid #e7e9ec;
+        border-radius: 5px;
+    }
+    input[type="submit"]{
+        height: 40px;
+        background-color: #55adc2;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    label{
+        @include text-label;
+    }
+}
+.checkbox{
+    flex-direction: row;
+    position: relative;
+    @include text-label;
+    b{
+        color: black;
+    }
+    line-height: 19px;
+
+    // input[type=checkbox]:checked + label::before {
+    //     background-color: #2196F3 !important;
+    //     color: #ffffff !important;
+    //   }
+    input[type="checkbox"]{
+        color: #ffffff;
+    }
+      input[type="checkbox"]:checked:before {
+        content: '\2713';
+        text-align: center;
+        line-height: 13px;
+        color: #ffffff;
+        background: #2196F3;
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 2px;
+        transform: translate(-50%, -50%);
+        left: 10px;
+        bottom: -3px;
+    }
+}
+}
+}
+.footer{
+    margin-top: 20px;
+    font-size: 15px;
+    @include center;
+    &>div{
+        margin-bottom: 20px;
+    }
+    .signUp{
+        a{
+            color: black;
+            font-weight: 600;
+        }
+    }
+}
+  /*# sourceMappingURL=style.css.map */
